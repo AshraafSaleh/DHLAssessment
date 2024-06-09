@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHL Inspired Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            position: relative; /* Make the body a positioning context */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            body::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('/Image/DHL2.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                filter: blur(5px); /* Add a blur effect to the background image */
+                z-index: -1; /* Ensure the blurred background stays behind other content */
+            }
+
+
+        .container-hero {
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-section {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-weight: bold; /* Added font weight for bold appearance */
+            font-family: 'Georgia', serif; /* Changed font-family to Georgia for a bold and interesting title */
+            text-align: center;
+            padding: 20px;
+        }
+
+            .hero-section h1 {
+                font-size: 3em;
+                margin-bottom: 10px;
+            }
+
+            .hero-section p {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+
+
+        .cta-button {
+            background-color: #ffcc00;
+            color: #ba0c2f;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+            .cta-button:hover {
+                background-color: #e6b800;
+            }
+
+        .highlights {
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around; /* Ensures even spacing between the items */
+            flex-wrap: wrap; /* Allows wrapping if the screen is too narrow */
+        }
+
+            .highlights h2 {
+                width: 100%; /* Ensures the heading takes full width and sits above the flex items */
+                margin-bottom: 20px;
+                font-size: 2em;
+                color: black; /* Changed color to black */
+                font-weight: bold; /* Added font weight for bold appearance */
+                font-family: 'Arial', sans-serif; /* Chose Arial as a more standard, bold font */
+            }
+
+
+            .highlights .highlight {
+                background: #fff;
+                padding: 20px;
+                margin: 10px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 30%; /* Adjust width as needed */
+                display: flex;
+                flex-direction: column; /* Ensures content inside each .highlight is stacked vertically */
+                justify-content: space-between; /* Adds space between elements inside .highlight */
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="container-hero">
+        <section class="hero-section">
+            <div>
+                <h1>Welcome to DHL</h1>
+                <p>Your Logistics and Supply Chain Partner</p>
+                <button class="cta-button">Explore our business solutions</button>
+            </div>
+        </section>
+    </div>
+
+    <section class="highlights" id="highlights">
+        <h2>Our Services</h2>
+        <div class="highlight">
+            <h3>Express Delivery</h3>
+            <p>Fast and reliable delivery services worldwide.</p>
+        </div>
+        <div class="highlight">
+            <h3>Freight Services</h3>
+            <p>Comprehensive freight solutions by air, sea, and land.</p>
+        </div>
+        <div class="highlight">
+            <h3>Supply Chain Solutions</h3>
+            <p>End-to-end supply chain management and logistics.</p>
+        </div>
+    </section>
+</body>
+</html>

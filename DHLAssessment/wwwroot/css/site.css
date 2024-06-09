@@ -1,22 +1,59 @@
-html {
-  font-size: 14px;
+
+/* Header styles */
+.header {
+    font-size: 14px;
+    position: relative;
+    width: 80%; /* Header width set to 75% */
+    height: 90px; /* Adjust height as needed */
+    margin: 0 auto; /* Center the header horizontally */
+    background: linear-gradient(to bottom, rgba(255, 204, 0, 0.9) 0%, rgba(255, 204, 0, 0) 100%); /* Change to DHL Yellow */
+    transition: background 2.0s ease; /* Delay the transition */
+    border: none;
 }
+
+
+/* Footer styles */
+.footer {
+    position: fixed; /* Fixes the footer to the bottom of the page */
+    bottom: 0; /* Aligns the footer at the bottom */
+    left: 0; /* Aligns the footer to the left edge */
+    width: 100%; /* Sets the footer to take the full width of the viewport */
+    text-align: center; /* Center-aligns the footer content */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Slight shadow with blur effect */
+    padding: 10px 0; /* Optional: Add padding for better spacing */
+}
+
+
+
+
+/* DHL theme styles */
+.header, .footer {
+    color: #000; /* Black font color */
+}
+
+    .header .navbar-brand, .footer a {
+        color: #000; /* Black font color for links */
+    }
+
+    .header .navbar-nav .nav-link {
+        color: #000; /* Black font color for nav links */
+    }
+
+    .header .navbar-toggler-icon {
+        background-color: #000; /* Black color for toggler icon */
+    }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    .header {
+        font-size: 16px;
+    }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
+.header .btn:focus,
+.header .btn:active:focus,
+.header .btn-link.nav-link:focus,
+.header .form-control:focus,
+.header .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
